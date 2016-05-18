@@ -104,35 +104,22 @@ try
     doc.info = null;  // delete metadata
     
     //Includes all of the iOS and Android sizes current for Apr 2016
+    //Note (18 May 2016) AIR 21 and iOS 9 now need these file names instead of just Icon-167 otherwise it will fail to upload
     var icons = [
-      {"name": "Icon-29", "size":29},
-      {"name": "Icon-36", "size":36},
-      {"name": "Icon-40", "size":40},
-      {"name": "Icon-48", "size":48},
-      {"name": "Icon-50", "size":50},
-      {"name": "Icon", "size":57},    
-      {"name": "Icon-57", "size":57},
-      {"name": "Icon-58", "size":58},
-      {"name": "Icon-72", "size":72},
+
+      //Icon60 variations
+      {"name": "Icon-60@2x", "size":120},
+      {"name": "Icon-60@3x", "size":180},
+
+      //Icon 76 variations
       {"name": "Icon-76", "size":76},
-      {"name": "Icon-80", "size":80},
-      {"name": "Icon-87", "size":87},
-      {"name": "Icon-100", "size":100},
-      {"name": "Icon-114", "size":114},
-      {"name": "Icon-120", "size":120},
-      {"name": "Icon-144", "size":144},
-      {"name": "Icon-152", "size":152},
-      {"name": "Icon-167", "size":167},
-      {"name": "Icon-180", "size":180},
-      {"name": "Icon-192", "size":192},
-      {"name": "Icon-512", "size":512},
+      {"name": "Icon-76@2x", "size":152},
+
+      //Other
+      {"name": "Icon-Small-40@2x", "size":80},
+      {"name": "Icon-83.5@2x", "size":167},
       {"name": "Icon-1024", "size":1024}
     ];
-
-
-
-
-
 
     var icon;
     for (i = 0; i < icons.length; i++) 
